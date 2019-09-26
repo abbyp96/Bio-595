@@ -1,0 +1,32 @@
+setwd("C:/Users/abbyp/Documents/Louisiana/Bio 595 Intro to R/Bio-595/Lab 4")
+
+r = load("aurelia_15minCell_statareas.Rdata")
+t = read.csv("aurelia_15minCell_statareas.txt")
+x = readxl::read_excel("Aurelia_SEAMAP_2012-2018_30minCell.xlsx")
+c = read.csv("BGSREC.csv")
+c1 = read.csv("CRUISES.csv")
+c2 = read.csv("CTDCASTREC.csv")
+c3 = read.csv("CTDREC.csv")
+c4 = read.csv("ENVREC.csv")
+c5 = read.csv("GLFREC.csv")
+c6 = read.csv("INGEST_DATA.csv")
+c7 = read.csv("INVREC.csv")
+t2 = read.table("ISIIS201405281105.txt", sep="\t", skip=10, header=TRUE, fileEncoding="ISO-8859-1", stringsAsFactors=FALSE, 
+               quote="\"", check.names=FALSE, na.strings="9999.99")
+t3 = read.table("ISIIS201405281124.txt", sep="\t", skip=10, header=TRUE, fileEncoding="ISO-8859-1", stringsAsFactors=FALSE, 
+                quote="\"", check.names=FALSE, na.strings="9999.99")
+t4 = read.table("ISIIS201405281215.txt", sep="\t", skip=10, header=TRUE, fileEncoding="ISO-8859-1", stringsAsFactors=FALSE, 
+                quote="\"", check.names=FALSE, na.strings="9999.99")
+t5 = read.table("ISIIS201405281609.txt", sep="\t", skip=10, header=TRUE, fileEncoding="ISO-8859-1", stringsAsFactors=FALSE, 
+                quote="\"", check.names=FALSE, na.strings="9999.99")
+t4 = read.csv("ISIIS201405281215.txt")
+t5 = read.csv("ISIIS201405281609.txt")
+c8 = read.csv("ISTREC.csv")
+c9 = read.csv("lg_camera_class_groupings_20170113_phylo_orderd.csv")
+x2 = readxl::read_excel("NameTranslator_table20140330.xlsx")
+c10 = read.csv("NEWBIOCODESBIG.csv")
+c11 = read.csv("SHRREC.csv")
+c12 = read.csv("STAREC.csv")
+c13 = read.csv("STAREC_rev20190402.csv")
+x3 = readxl::read_excel("transect_towtime.xlsx")
+c14 = read.csv("VESSELS.csv")
